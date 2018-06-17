@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+      <Wrapper></Wrapper>    
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+
+  import Wrapper from "./components/Wrapper.vue";
+
+  export default {
+    name: 'App',
+    components: {
+      Wrapper
+    }
+  }
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  @import "./assets/css/bootstrap.min.css";
+  @import "../node_modules/font-awesome/css/font-awesome.min.css";
+  @import "./assets/css/main.css";
+
 </style>
+

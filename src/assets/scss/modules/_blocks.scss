@@ -1,0 +1,118 @@
+.main-content {
+    height: 100vh;
+    width: 100%;
+    padding-top: 58px;
+    background-color: $color-white;
+    .sidebar {
+        width: 350px;
+        height: 100%;
+        background-color: $color-secondary;
+        position: absolute;
+        top: 0;
+        right: -350px;
+        z-index: 1;
+        transition: all 0.5s ease;
+        a {
+            color: white;
+        }
+    }
+    .sidebar-right {
+        color: white;
+        padding: 60px 35px 15px 35px;
+        font-size: 14px;
+        .fa {
+            font-size: 22px;
+        }
+        .fa.fa-times {
+            font-size: 26px;
+        }
+        .sidebar-title {
+            margin: 15px 0;
+        }
+        .sidebar-body {
+            padding: 10px 0;
+            ul {
+                li {
+                    margin-bottom: 7.5px;
+                    a {
+                        .fa {
+                            margin-right: 5px;
+                            width: 22px;
+                            font-size: 18px;
+                        }
+                    }
+                    .radio-inline {
+                        .radio {
+                            width: 22px;
+                            margin-top: 1px;
+                        }
+                        .radio-label {
+                            margin-left: 10px;
+                        }
+                    }
+                    .col-lg-6:nth-child(1) {
+                        padding-right: 5px;
+                    }
+                    .col-lg-6:nth-child(2) {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+        .sidebar-footer {
+            ul {
+                position: absolute;
+                right: 15px;
+                bottom: 0;
+            }
+        }
+    }
+    .sidebar.active {
+        right: 0px;
+        overflow-y: scroll !important;
+    }
+    .content-body {
+        min-height: 100%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: table;
+        .content-title {
+            display: table-row;
+            background-color: $color-light;
+            height: 40px;
+            width: 100%;
+            div:first-child {
+                padding: 20px 0 10px;
+            }
+            .fa {
+                font-size: 28px;
+                margin-right: 5px;
+            }
+            .counter {
+                margin: 0;
+                position: absolute;
+                left: 15px;
+            }
+            .pagination {
+                margin: 0;
+                margin-top: 10px;
+                position: absolute;
+                right: 15px;
+                a {
+                    padding: 2.5px 10px;
+                    background-color: $color-dark;
+                    color: $color-white;
+                }
+            }
+        }
+        .content-table {
+            display: table-cell;
+            height: 100%;
+            width: 100%;
+            background-color: $color-light;
+            overflow: hidden;
+            .table {}
+        }
+    }
+}

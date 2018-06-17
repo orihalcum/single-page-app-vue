@@ -11,7 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "font-awesome": "^4.7.0",
+    "handsontable": "^3.0.0",
     "vue": "^2.5.2",
+    "vue-handsontable-official": "^1.1.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
