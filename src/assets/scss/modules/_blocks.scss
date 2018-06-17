@@ -10,7 +10,7 @@
         position: absolute;
         top: 0;
         right: -350px;
-        z-index: 1;
+        z-index: 99999;
         transition: all 0.5s ease;
         a {
             color: white;
